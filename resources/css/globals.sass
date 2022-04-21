@@ -1,0 +1,62 @@
+$green: #639d63
+$gray-1: #e5e5e5
+$gray-2: #929292
+
+@font-face
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-display: auto
+
+html
+  box-sizing: border-box
+
+body
+  font-family: Montserrat
+  background-size: cover
+  background-position: center
+  min-height: 100vh
+  background-color: #000
+
+*, *:before, *:after
+  box-sizing: inherit
+  padding: 0
+  margin: 0
+  background-repeat: no-repeat
+  color: #fff
+a
+  text-decoration: none
+  color: #fff
+
+button
+  color: #000
+
+.container
+  max-width: 1280px
+  width: 100%
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+
+.btn
+  background-color: $green
+  padding: 15px 20px
+  color: #fff
+  font-size: 18px
+  border: 1px solid $green
+  display: block
+  transition: .3s
+  &.link
+    font-weight: 600
+    background-color: transparent
+    border: none
+    color: #000
+  &.has-image
+    display: flex
+    align-items: center
+    img
+      transition: .3s
+    span
+      margin-right: 8px
+    &:hover
+      img
+        transform: translateX(10px)
