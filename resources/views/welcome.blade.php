@@ -14,7 +14,7 @@
     <nav>
         <div class="container">
             <a href="" class="logo">
-                <img src="https://picsum.photos/50" alt="">
+                <img src="https://picsum.photos/50?grayscale" alt="">
             </a>
             <div class="links">
                 <a href="#">About Us</a>
@@ -23,8 +23,8 @@
                 <a href="#">Contact Us</a>
             </div>
             <div class="buttons-wrapper">
-                <button><img src="https://picsum.photos/20" alt=""></button>
-                <button><img src="https://picsum.photos/20" alt=""></button>
+                <button><img src="https://picsum.photos/20?random=15" alt=""></button>
+                <button><img src="https://picsum.photos/20?random=98" alt=""></button>
             </div>
         </div>
     </nav>
@@ -34,18 +34,21 @@
             <div class="container">
                 <div class="left">
                     <div class="social-wrapper">
-                        <a href="#"><img src="https://picsum.photos/20" alt=""></a>
-                        <a href="#"><img src="https://picsum.photos/20" alt=""></a>
-                        <a href="#"><img src="https://picsum.photos/20" alt=""></a>
+                        <a href="#"><img src="https://picsum.photos/20?random=1" alt=""></a>
+                        <a href="#"><img src="https://picsum.photos/20?random=2" alt=""></a>
+                        <a href="#"><img src="https://picsum.photos/20?random=3" alt=""></a>
                     </div>
                     <div class="heading-texts">
-                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                        <img src="https://picsum.photos/100" alt="">
-                        <h3>Lorem.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum maiores neque fugiat quaerat fuga omnis illo ut repudiandae architecto quis tenetur ea repellendus, ipsum, deleniti quisquam sed nulla voluptas. Ea magni qui ab debitis quas explicabo incidunt, laboriosam vel nostrum repudiandae provident dignissimos nisi repellat perferendis nihil cupiditate. Ducimus.</p>
-                    </div>
-                    <div class="buttons-wrapper">
-                        <button>Discover</button>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h1>DESIGN</h1>
+                        {{-- <img src="https://picsum.photos/100" alt=""> --}}
+                        <div class="description">
+                            <h3>Lorem.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum maiores neque fugiat quaerat fuga omnis illo ut repudiandae architecto quis tenetur ea repellendus, ipsum, deleniti quisquam sed nulla voluptas. Ea magni qui ab debitis quas explicabo incidunt, laboriosam vel nostrum repudiandae provident dignissimos nisi repellat perferendis nihil cupiditate. Ducimus.</p>
+                        </div>
+                        <div class="buttons-wrapper">
+                            <button>Discover</button>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -54,14 +57,16 @@
                             <div class="box">
                                 <div class="real-box">
                                     <div class="background">
-                                        <img src="https://picsum.photos/300" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <h2>TITLE</h2>
+                                        <img src="https://picsum.photos/500?random={{ $i+1 }}" alt="">
+                                        <h2>TITLE {{ $i + 1 }}</h2>
                                     </div>
                                 </div>
                             </div>
                         @endfor
+                    </div>
+                    <div class="actions-wrapper">
+                        <img src="https://picsum.photos/30?grayscale" alt="">
+                        <img src="https://picsum.photos/30?grayscale" alt="">
                     </div>
                 </div>
             </div>
